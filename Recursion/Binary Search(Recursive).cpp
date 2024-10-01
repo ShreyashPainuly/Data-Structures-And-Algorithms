@@ -12,12 +12,12 @@ bool binarySearch(int *arr, int s, int e, int key) {
         return true;
     }
 
-        if(arr[mid] > key) {
-            return binarySearch(arr, s, mid - 1, key);
-        }
-        else {
-            return binarySearch(arr, mid + 1, e, key);
-        }
+    if(arr[mid] > key) {
+        return binarySearch(arr, s, mid - 1, key);
+    }
+    else {
+        return binarySearch(arr, mid + 1, e, key);
+    }
 
 }
 int main() {
